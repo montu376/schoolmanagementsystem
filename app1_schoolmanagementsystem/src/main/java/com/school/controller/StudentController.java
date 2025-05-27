@@ -25,6 +25,11 @@ public class StudentController {
 	@Autowired
 	private StudentService studentService;
 	
+	@GetMapping("/test")
+	public ResponseEntity<String> testHandler(){
+		return new ResponseEntity<String>("Tested...", HttpStatus.OK);
+	}
+	
 	@PostMapping("/register")
 	public ResponseEntity<Student> registerStudentHanlder(@Valid @RequestBody Student student){
 		return new ResponseEntity<Student>(studentService.registerStudent(student) , HttpStatus.CREATED);
