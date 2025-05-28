@@ -11,7 +11,6 @@
 	<groupId>com.school</groupId>
 	<artifactId>app1_schoolmanagementsystem</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 	<name>app1_schoolmanagementsystem</name>
 	<description>Creating End to End Backend for School Management System.</description>
 	<url/>
